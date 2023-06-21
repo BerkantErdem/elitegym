@@ -99,11 +99,23 @@
 				margin-top: 100px;
 			}
 
-			.instagram {
-				width: 50px;
-				height: 50px;
-				margin-top: 20px;
-			}
+			.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.social-icons {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.social-icons img {
+		width: 50px;
+		height: 50px;
+		margin-right: 10px;
+	}
 		</style>
 	</head>
 	<body>
@@ -170,12 +182,17 @@
 		</section>
 
 		<footer>
-			<p>&copy; 2023 Elite Gym. All rights reserved.</p>
-			<a
-				href="https://instagram.com/elitegym.belgium?igshid=MjEwN2IyYWYwYw=="
-			>
-				<img class="instagram" src="img/instagram.png" alt="" />
-			</a>
+			<div class="container">
+				<p>&copy; 2023 Elite Gym. All rights reserved.</p>
+				<div class="social-icons">
+					<a href="https://instagram.com/elitegym.belgium?igshid=MjEwN2IyYWYwYw==">
+						<img class="instagram" src="img/instagram.png" alt="Instagram" />
+					</a>
+					<a href="https://twitter.com/ElitegymBE">
+						<img class="twitter" src="img/twitter.png" alt="Twitter" />
+					</a>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
